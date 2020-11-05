@@ -2,38 +2,38 @@
     <form>
     <head>
     <fieldset>
-        <h2><i>PEDIDO PIZZA</i></h2>
+        <b><h2>PEDIDO PIZZA</h2></b>
         <img src="Pizza-con-pepperoni.webp" "with=500 height=500">
     </fieldset>
     </head>
     <body>
     <fieldset>
-        <legend><i>CONFIGURA TU PIZZA</i></legend>
+        <legend>CONFIGURA TU PIZZA</legend>
             <p>
                 <label>Fina</label>
-                <input type="checkbox" name="Fina" value="sí">
+                <input type="radio" name="masa" value="Fina">
                 <label>Gorda</label>
-                <input type="checkbox" name="Gorda" value="no">
+                <input type="radio" name="masa" value="Gorda">
                 
             </p>
     
-                <i>Tipos de salsa:</i>
+            <b><i>Tipos de salsa:</i></b>
                 <p>
                     <label>tomate</label>
-                    <input type="radio" name="tomate" value="">
+                    <input type="radio" name="salsa" value="tomate">
                 </p>
         
                 <p>
                     <label>barbacoa</label>
-                    <input type="radio" name="barbacoa" value="">
+                    <input type="radio" name="salsa" value="barbacoa">
                 </p>
         
                 <p>
                     <label>carbonara</label>
-                    <input type="radio" name="carbonara" value="">
+                    <input type="radio" name="salsa" value="carbonara">
                 </p>
             
-                <i>Queso:</i>
+                <b><i>Queso:</i></b>
                 <p>
                     <label>Sí</label>
                     <input type="radio" name="Queso" value="Sí">
@@ -43,21 +43,80 @@
                     <input type="radio" name="Queso" value="No">
                 
                 </p>
-                    Ingredientes
+                <i><b>Ingredientes</b></i>
                 <p>
-                    <
-        
+                    
+                    <label>ingrediente</label>
+                    <select>
+                            <option>ninguno</option>
+                            <option>peperoni</option>
+                            <option>pimiento</option>
+                            <option>rábano</option>
+                            <option>chorizo</option>
+                            <option>rúcula</option>
+                            <option>champiñones</option>
+                            <option>carne</option>
+                            <option>queso</option>
+                            <option>cebolla</option>
+                            <option>carne</option>
+                    </select>
+                            
                 </p>
-                
+                <p>
+                    <i><b>Tamaño</b></i>
+                        <p>
+                        <label>pequeña</label>
+                            <input type="radio" name="tamaño" value="pequeña">
+                        </p>
+                        <p>
+                        <label>mediana</label>
+                            <input type="radio" name="tamaño" value="mediana">
+                        </p>
+                        <p>
+                        <label>familiar</label>
+                            <input type="radio" name="tamaño" value="familiar"> 
+                        </p>
         
         
+    </fieldset>
+    <fieldset>
+            <legend>DATOS DE PAGO</legend>
+                <p>
+                    <label>Número de cuenta</label>
+                    <input type="tel" maxlength="16" placeholder="IBAN...">
+                </p>
+                <p>
+                    <label>Mes de caducidad</label>
+                    <input type="date" placeholder="">
+                </p>
+                <p>
+                    <label>Código de seguridad</label>
+                    <input type="tel"   placeholder="CVC">
+                </p>
+        </fieldset>
+        <fieldset>
+            <legend>DATOS DE ENTREGA</legend>
+                <p>
+                    <label>Dirección completa</label>
+                        <input type="tel" placeholder="dirección...">
+                </p>
+                <p>
+                    <label>Observaciones</label>
+                        <textarea rows="30" cols="30"></textarea>
+               </p>
+        <fieldset>
+            <p>
+            <legend>FINALIZAR</legend>
+                    <input type="reset">
+                    <input type="submit">
             
-        
             
-
-
-
-
+        </fieldset>
+        
+        
+        
+        
+                    
     </fieldset> 
     </body>
     </form>
